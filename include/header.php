@@ -45,6 +45,14 @@
                             <span class="hide-menu">Management</span>
                         </li>
                         <li class="sidebar-item">
+                            <a class="sidebar-link" href="../public/community-feed.php" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-news fs-6"></i>
+                                </span>
+                                <span class="hide-menu">Community Feed</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
                             <a class="sidebar-link" href="../pages_2/pets-list.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-paw fs-6"></i>
