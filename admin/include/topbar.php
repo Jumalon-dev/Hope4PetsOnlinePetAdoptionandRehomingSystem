@@ -1,5 +1,5 @@
 
-    <!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -50,7 +50,7 @@
                                 <span>
                                     <i class="ti ti-news fs-6"></i>
                                 </span>
-                                <span class="hide-menu">Community Feed</span>
+                                <span class="hide-menu">Users</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -62,19 +62,11 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../admin/shelter.php" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-users fs-6"></i>
-                                </span>
-                                <span class="hide-menu">Shelters</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
                             <a class="sidebar-link" href="../admin/add-pet.php" aria-expanded="false">
                                 <span>
-                                    <i class="ti ti-square-plus fs-6"></i>
+                                    <i class="ti ti-building-community fs-6"></i>
                                 </span>
-                                <span class="hide-menu">Add Pet</span>
+                                <span class="hide-menu">Shelters</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -82,7 +74,7 @@
                                 <span>
                                     <i class="ti ti-calendar-event fs-6"></i>
                                 </span>
-                                <span class="hide-menu">Appointments</span>
+                                <span class="hide-menu">Applications</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -109,26 +101,7 @@
                                 <span class="hide-menu">Reports</span>
                             </a>
                         </li>
-                        <li class="nav-small-cap">
-                            <i class="ti ti-dots nav-small-cap-icon fs-6"></i>
-                            <span class="hide-menu">Account</span>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="../admin/profile.php" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-user fs-6"></i>
-                                </span>
-                                <span class="hide-menu">Profile</span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link" href="../api/logout.php" aria-expanded="false">
-                                <span>
-                                    <i class="ti ti-logout fs-6"></i>
-                                </span>
-                                <span class="hide-menu">Logout</span>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
