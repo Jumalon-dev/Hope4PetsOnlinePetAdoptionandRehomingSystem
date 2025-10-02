@@ -7,7 +7,8 @@
 <div class="body-wrapper">
     <!--  Header Start -->
     <?php 
-        // Topbar is already rendered by include/header.php
+        // Include topbar from the correct local include directory
+        include __DIR__ . '/include/topbar.php';
     ?>
     <!--  Header End -->
     <div class="container-fluid">
