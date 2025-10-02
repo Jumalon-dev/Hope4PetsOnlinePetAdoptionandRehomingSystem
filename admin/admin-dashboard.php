@@ -1,9 +1,12 @@
 <?php 
-        // Use existing header and topbar includes
-        include __DIR__ . '/include/topbar.php';
+    // Use existing topbar includes
+    include __DIR__ . '/include/topbar.php';
 ?>
 <div class="body-wrapper">
-    <?php include __DIR__ . '/include/header.php'; ?>
+    <?php
+        // Use existing header includes
+        include __DIR__ . '/include/header.php';
+     ?>
     <div class="container-fluid">
         <main class="py-2">
             <!-- Overview Stats -->
