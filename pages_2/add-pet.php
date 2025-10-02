@@ -284,4 +284,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	</div>
 </div>
 <?php include __DIR__ . '/../include/footer.php'; ?>
+// End of add-pet.php
 

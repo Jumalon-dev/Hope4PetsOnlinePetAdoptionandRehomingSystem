@@ -10,7 +10,7 @@ include __DIR__ . '/../include/header.php';
 				<div class="card">
 					<div class="card-body">
 						<h3 class="card-title mb-0">Donations</h3>
-						<p class="mb-0 text-muted">Donation tracking coming soon.</p>
+						<p class="mb-0 text-muted">Donation gege.</p>
 					</div>
 				</div>
 			</div>
