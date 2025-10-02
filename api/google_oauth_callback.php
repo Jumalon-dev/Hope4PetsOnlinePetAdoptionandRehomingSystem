@@ -158,5 +158,5 @@ $path = $u['path'] ?? '/';
 // remove trailing '/api/google_oauth_callback.php'
 $base = rtrim(str_replace('/api/google_oauth_callback.php', '', $path), '/');
 if ($base === '') { $base = '/'; }
-header('Location: ' . $base . '/pages_2/admin-dashboard.php');
+header('Location: ' . $base . '/admin/admin-dashboard.php');
 exit;

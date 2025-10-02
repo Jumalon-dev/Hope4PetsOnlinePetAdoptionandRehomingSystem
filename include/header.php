@@ -18,7 +18,7 @@
             <!-- Sidebar scroll-->
             <div>
                 <div class="brand-logo d-flex align-items-center justify-content-between">
-                    <a href="../pages_2/admin-dashboard.php" class="text-nowrap logo-img">
+                    <a href="../admin/admin-dashboard.php" class="text-nowrap logo-img">
                         <img src="../assets/images/logos/logo-light.svg" alt="" />
                     </a>
                     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -33,7 +33,7 @@
                             <span class="hide-menu">Main</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/admin-dashboard.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/admin-dashboard.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-home fs-6"></i>
                                 </span>
@@ -53,7 +53,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/pets-list.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/pets-list.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-paw fs-6"></i>
                                 </span>
@@ -61,7 +61,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/shelter.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/shelter.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-users fs-6"></i>
                                 </span>
@@ -69,7 +69,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/add-pet.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/add-pet.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-square-plus fs-6"></i>
                                 </span>
@@ -77,7 +77,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/appointments.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/appointments.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-calendar-event fs-6"></i>
                                 </span>
@@ -85,7 +85,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/messages.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/messages.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-message-circle fs-6"></i>
                                 </span>
@@ -93,7 +93,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/donations.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/donations.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-currency-dollar fs-6"></i>
                                 </span>
@@ -101,7 +101,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/reports.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/reports.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-report-analytics fs-6"></i>
                                 </span>
@@ -113,7 +113,7 @@
                             <span class="hide-menu">Account</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" href="../pages_2/profile.php" aria-expanded="false">
+                            <a class="sidebar-link" href="../admin/profile.php" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-user fs-6"></i>
                                 </span>

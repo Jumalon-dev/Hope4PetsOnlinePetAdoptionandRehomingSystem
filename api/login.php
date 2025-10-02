@@ -6,7 +6,7 @@ $email = trim($_POST['email'] ?? '');
 $password = $_POST['password'] ?? '';
 
 if ($email === '' || $password === '') {
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-login.php?error=' . urlencode('Email and password are required.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-login.php?error=' . urlencode('Email and password are required.'));
   exit;
 }
 
@@ -18,17 +18,17 @@ $user = $result->fetch_assoc();
 $stmt->close();
 
 if (!$user) {
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-login.php?error=' . urlencode('Invalid credentials.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-login.php?error=' . urlencode('Invalid credentials.'));
   exit;
 }
 
 if (!password_verify($password, $user['password_hash'])) {
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-login.php?error=' . urlencode('Invalid credentials.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-login.php?error=' . urlencode('Invalid credentials.'));
   exit;
 }
 
 if ($user['status'] !== 'active') {
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-login.php?error=' . urlencode('Account is not active.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-login.php?error=' . urlencode('Account is not active.'));
   exit;
 }
 
@@ -37,5 +37,5 @@ $_SESSION['user_name'] = $user['name'];
 $_SESSION['user_email'] = $user['email'];
 $_SESSION['auth_provider'] = 'local';
 
-header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/admin-dashboard.php');
+header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/admin-dashboard.php');
 exit;

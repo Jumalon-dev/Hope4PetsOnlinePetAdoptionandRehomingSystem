@@ -7,12 +7,12 @@ $email = trim($_POST['email'] ?? '');
 $password = $_POST['password'] ?? '';
 
 if ($name === '' || $email === '' || $password === '') {
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-register.php?error=' . urlencode('All fields are required.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-register.php?error=' . urlencode('All fields are required.'));
   exit;
 }
 
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-register.php?error=' . urlencode('Invalid email address.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-register.php?error=' . urlencode('Invalid email address.'));
   exit;
 }
 
@@ -23,7 +23,7 @@ $stmt->execute();
 $stmt->store_result();
 if ($stmt->num_rows > 0) {
   $stmt->close();
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-register.php?error=' . urlencode('Email already registered.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-register.php?error=' . urlencode('Email already registered.'));
   exit;
 }
 $stmt->close();
@@ -36,7 +36,7 @@ $stmt = $conn->prepare('INSERT INTO users (name, email, password_hash, role, sta
 $stmt->bind_param('sssss', $name, $email, $passwordHash, $role, $status);
 if (!$stmt->execute()) {
   $stmt->close();
-  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-register.php?error=' . urlencode('Failed to create account.'));
+  header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-register.php?error=' . urlencode('Failed to create account.'));
   exit;
 }
 $userId = $stmt->insert_id;
@@ -48,5 +48,5 @@ $_SESSION['user_name'] = $name;
 $_SESSION['user_email'] = $email;
 $_SESSION['auth_provider'] = 'local';
 
-header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/admin-dashboard.php');
+header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/admin-dashboard.php');
 exit;

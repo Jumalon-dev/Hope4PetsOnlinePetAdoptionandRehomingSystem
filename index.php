@@ -744,13 +744,13 @@
             <li><a href="#donate">Donate</a></li>
             <li><a href="#contact">Contact</a></li>
             <!-- Mobile-only auth links -->
-            <li class="only-mobile"><a href="pages_2/admin-dashboard.php">Log in</a></li>
-            <li class="only-mobile"><a href="pages_2/admin-dashboard.php">Sign up</a></li>
+            <li class="only-mobile"><a href="admin/authentication-login.php">Log in</a></li>
+            <li class="only-mobile"><a href="admin/authentication-register.php">Sign up</a></li>
           </ul>
         </nav>
         <div class="nav-cta">
-          <a class="btn ghost" href="pages_2/admin-dashboard.php">Log in</a>
-          <a class="btn" href="pages_2/admin-dashboard.php">Sign up</a>
+          <a class="btn ghost" href="admin/authentication-login.php">Log in</a>
+          <a class="btn" href="admin/authentication-register.php">Sign up</a>
         </div>
       </div>
   </header>

@@ -9,5 +9,5 @@ if (ini_get("session.use_cookies")) {
     );
 }
 session_destroy();
-header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/pages_2/authentication-login.php');
+header('Location: /Hope4PetsOnlinePetAdoptionandRehomingSystem/admin/authentication-login.php');
 exit;
